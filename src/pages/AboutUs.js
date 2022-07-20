@@ -23,6 +23,7 @@ import VerticalFeatures from "components/features/VerticalWithAlternateImageAndT
 import Hero from "components/hero/BackgroundAsImage.js";
 import SliderCard from "components/cards/ThreeColSlider.js";
 import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
+import Zoom from "react-medium-image-zoom";
 
 // import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 

@@ -3,6 +3,8 @@ import { Container, ContentWithPaddingXl } from "components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
+import "react-medium-image-zoom/dist/styles.css";
+import Zoom from "react-medium-image-zoom";
 import {
   SectionHeading,
   Subheading as SubheadingBase,
@@ -86,6 +88,11 @@ const PrimaryBackgroundContainer = tw(
   Container
 )`-mx-8 px-8 bg-gray-200 text-gray-100`;
 
+const afterStyle = {
+  width: "80%",
+  height: "auto",
+};
+
 export default ({
   subheading = "",
   heading = "We love writing.",
@@ -103,7 +110,21 @@ export default ({
         <Posts></Posts>
       </ContentWithPaddingXl>
       <Column>
-        <MyImage imageSrc={imageSrc} />
+        {/* <ReactIntense src={imageSrc} /> */}
+        {/* <MyImage imageSrc={imageSrc} /> */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+          }}
+        >
+          <Zoom>
+            <img width={"1000px"} alt="LichHoc" src={imageSrc} />
+          </Zoom>
+        </div>
       </Column>
     </PrimaryBackgroundContainer>
   );

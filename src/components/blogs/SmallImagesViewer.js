@@ -9,6 +9,7 @@ import {
 } from "components/misc/Headings";
 import { SectionDescription } from "components/misc/Typography";
 import { ReactComponent as SvgDotPatternIcon } from "images/dot-pattern.svg";
+import Zoom from "react-medium-image-zoom";
 
 const HeadingContainer = tw.div`text-center`;
 const Subheading = tw(SubheadingBase)`mb-4`;
@@ -102,7 +103,9 @@ export default ({
           {description && <Description>{description}</Description>}
         </HeadingContainer>
         <Column>
-          <MyImage imageSrc={imageSrc} />
+          <Zoom>
+            <img width={"1000px"} alt="LichHoc" src={imageSrc} />
+          </Zoom>
         </Column>
       </ContentWithPaddingXl>
       {/* <image src={imageSrc} /> */}
