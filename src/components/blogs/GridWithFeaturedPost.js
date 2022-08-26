@@ -118,6 +118,14 @@ export default ({
         "Là một kỹ năng đặc biệt quan trọng trong cuộc sống, Giáo Làng đã có kinh nghiệm trong việc giúp nhiều bạn học sinh giao tiếp tốt trong môi trường quốc tế.",
       url: "/grammar",
     },
+    {
+      postImageSrc:
+        "https://expatlifeinthailand.com//assets/media/2020/03/classroom.jpg",
+      title: "TRẺ EM",
+      authorName:
+        "Đây là một chương trình học tiếng Anh năng động được thiết kế đặc biệt cho học sinh từ 3 đến 12 tuổi",
+      url: "/kids",
+    },
   ],
 }) => {
   return (

@@ -108,6 +108,9 @@ import SaaSProductLandingPage from "demos/SaaSProductLandingPage";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AgencyLandingPage from "demos/AgencyLandingPage";
 import AboutUs from "pages/AboutUs";
+import AboutUsGrammar from "pages/AboutUsGrammar";
+import AboutUsCommunication from "pages/AboutUsCommunication";
+import AboutUsKids from "pages/AboutUsKids";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -119,6 +122,9 @@ export default function App() {
         <Route>
           <Route path="/" element={<SaaSProductLandingPage />} />
           <Route path="/ielts" element={<AboutUs />} />
+          <Route path="/communication" element={<AboutUsCommunication />} />
+          <Route path="/grammar" element={<AboutUsGrammar />} />
+          <Route path="/kids" element={<AboutUsKids />} />
         </Route>
       </Routes>
       {/* <AgencyLandingPage /> */}
